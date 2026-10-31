@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NSS SEVA – App Prototype</title>
+<style>
+body{margin:0}@keyframes pulse{0%,100%{filter:brightness(1)}50%{filter:brightness(1.2)}}@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}button{transition:transform .15s}button:hover{transform:scale(1.04)}
+body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(160deg,#12236B,#0B1648);min-height:100vh}
+</style>
+</head>
+<body>
+<main style="padding:40px 20px;display:flex;flex-direction:column;align-items:center;gap:36px">
+<header style="text-align:center;color:#FFFFFF">
+  <h1 style="margin:0;font-size:44px">NSS SEVA</h1>
+  <p style="margin:8px 0 0;font-size:20px;color:#C9D3F5">App Prototype · Skill &amp; Effort Volunteer Alliance</p>
+</header>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:48px">
+
+<!-- Screen 1: Home -->
+<figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:16px">
+<div style="border-radius:44px;border:10px solid #0B1648;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45)">
+<div style="width:390px;height:844px;box-sizing:border-box;background:linear-gradient(180deg,#F4F6FB,#DCE3FA);color:#12236B;font-family:Arial,Helvetica,sans-serif;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:linear-gradient(135deg,#12236B,#3F5BD6);box-shadow:0 14px 26px rgba(18,35,107,.4);color:#FFFFFF;position:relative;overflow:hidden;padding:28px 20px 22px;border-radius:0 0 30px 30px;display:flex;flex-direction:column;gap:6px">
+  <div style="position:absolute;right:-30px;top:-40px;width:130px;height:130px;border-radius:65px;background:rgba(255,255,255,.14)"></div>
+  <div style="font-size:26px;font-weight:800">NSS SEVA</div>
+  <div style="font-size:15px;color:#E3E8FF">Namaste! Free help from verified NSS volunteers near you</div>
+</div>
+<div style="padding:16px 20px;display:flex;flex-direction:column;gap:14px;flex:1;overflow-y:auto">
+  <input aria-label="Search services" placeholder="Search help, schemes, camps" style="min-height:46px;border:2px solid #12236B;border-radius:14px;padding:0 14px;font-size:15px">
+  <button style="min-height:48px;border:0;border-radius:14px;background:#D2232A;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);animation:pulse 1.8s infinite;font-size:16px;font-weight:800">Blood Emergency SOS</button>
+  <div style="font-size:17px;font-weight:800">Quick Services</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:18px 10px">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#3F5BD6,#12236B);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 0.0s infinite">VS</div><div style="font-size:13px;font-weight:700">Vidya</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#3F5BD6,#12236B);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 0.25s infinite">JK</div><div style="font-size:13px;font-weight:700">Jan Kalyan</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#3F5BD6,#12236B);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 0.5s infinite">NS</div><div style="font-size:13px;font-weight:700">Nyaya</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#3F5BD6,#12236B);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 0.75s infinite">SB</div><div style="font-size:13px;font-weight:700">Swachh</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#FF5A60,#D2232A);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 1.0s infinite">RS</div><div style="font-size:13px;font-weight:700">Rakt SOS</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#3F5BD6,#12236B);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 1.25s infinite">DH</div><div style="font-size:13px;font-weight:700">Daan</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#3F5BD6,#12236B);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 1.5s infinite">IA</div><div style="font-size:13px;font-weight:700">Alliance</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:62px;height:62px;border-radius:20px;background:linear-gradient(145deg,#FF5A60,#D2232A);color:#FFFFFF;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 0 #0B1648,0 14px 14px rgba(11,22,72,.3);animation:floaty 3s ease-in-out 1.75s infinite">DR</div><div style="font-size:13px;font-weight:700">Disaster</div></div>
+  </div>
+  <div style="font-size:17px;font-weight:800">Near You</div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #12236B;border-bottom:6px solid #12236B;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:16px">Cleanup drive requested</div>
+    <div style="font-size:14px">Geo-tagged garbage report, nearby college NSS unit notified</div>
+  </div>
+</div>
+<div style="display:flex;background:#FFFFFF;border-top:3px solid #D2232A;box-shadow:0 -8px 20px rgba(18,35,107,.15);padding:8px 0">
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#D2232A">Home</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Requests</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Alliance</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Profile</button>
+</div>
+</div>
+</div>
+<figcaption style="color:#FFFFFF;font-weight:700;font-size:18px">Home</figcaption>
+</figure>
+
+<!-- Screen 2: Blood SOS -->
+<figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:16px">
+<div style="border-radius:44px;border:10px solid #0B1648;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45)">
+<div style="width:390px;height:844px;box-sizing:border-box;background:linear-gradient(180deg,#F4F6FB,#DCE3FA);color:#12236B;font-family:Arial,Helvetica,sans-serif;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:linear-gradient(135deg,#D2232A,#FF5A60);box-shadow:0 14px 26px rgba(18,35,107,.4);color:#FFFFFF;position:relative;overflow:hidden;padding:28px 20px 22px;border-radius:0 0 30px 30px;display:flex;flex-direction:column;gap:6px">
+  <div style="position:absolute;right:-30px;top:-40px;width:130px;height:130px;border-radius:65px;background:rgba(255,255,255,.14)"></div>
+  <div style="font-size:26px;font-weight:800">Blood SOS</div>
+  <div style="font-size:15px;color:#E3E8FF">Instant alert to matching donors within a tight radius</div>
+</div>
+<div style="padding:16px 20px;display:flex;flex-direction:column;gap:14px;flex:1;overflow-y:auto">
+  <div style="font-size:16px;font-weight:800">Blood group needed</div>
+  <div style="display:flex;flex-wrap:wrap;gap:8px">
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">A+</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">B+</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#D2232A;color:#FFFFFF;border:2px solid #D2232A">O+</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">AB+</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">A-</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">O-</span>
+  </div>
+  <input aria-label="Hospital" placeholder="Hospital / location" style="min-height:46px;border:2px solid #12236B;border-radius:14px;padding:0 14px;font-size:15px">
+  <div style="font-size:16px;font-weight:800">Alert radius</div>
+  <div style="display:flex;gap:8px">
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">1 km</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#D2232A;color:#FFFFFF;border:2px solid #D2232A">3 km</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">5 km</span>
+  </div>
+  <button style="min-height:48px;border:0;border-radius:14px;background:#D2232A;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);animation:pulse 1.8s infinite;font-size:16px;font-weight:800">Broadcast Alert Now</button>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #12236B;border-bottom:6px solid #12236B;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:15px">What happens next</div>
+    <div style="font-size:14px;line-height:1.4">Push notification goes to volunteers with a matching blood group. First to accept gets your location and contact.</div>
+  </div>
+</div>
+<div style="display:flex;background:#FFFFFF;border-top:3px solid #D2232A;box-shadow:0 -8px 20px rgba(18,35,107,.15);padding:8px 0">
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Home</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Requests</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Alliance</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Profile</button>
+</div>
+</div>
+</div>
+<figcaption style="color:#FFFFFF;font-weight:700;font-size:18px">Blood SOS</figcaption>
+</figure>
+
+<!-- Screen 3: Jan Kalyan -->
+<figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:16px">
+<div style="border-radius:44px;border:10px solid #0B1648;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45)">
+<div style="width:390px;height:844px;box-sizing:border-box;background:linear-gradient(180deg,#F4F6FB,#DCE3FA);color:#12236B;font-family:Arial,Helvetica,sans-serif;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:linear-gradient(135deg,#12236B,#3F5BD6);box-shadow:0 14px 26px rgba(18,35,107,.4);color:#FFFFFF;position:relative;overflow:hidden;padding:28px 20px 22px;border-radius:0 0 30px 30px;display:flex;flex-direction:column;gap:6px">
+  <div style="position:absolute;right:-30px;top:-40px;width:130px;height:130px;border-radius:65px;background:rgba(255,255,255,.14)"></div>
+  <div style="font-size:26px;font-weight:800">Jan Kalyan</div>
+  <div style="font-size:15px;color:#E3E8FF">Government schemes explained in simple language</div>
+</div>
+<div style="padding:16px 20px;display:flex;flex-direction:column;gap:14px;flex:1;overflow-y:auto">
+  <div style="display:flex;gap:8px">
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#D2232A;color:#FFFFFF;border:2px solid #D2232A">Hindi</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">English</span>
+    <span style="padding:10px 14px;border-radius:20px;font-size:15px;font-weight:700;background:#FFFFFF;color:#12236B;border:2px solid #12236B">Rajasthani</span>
+  </div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #D2232A;border-bottom:6px solid #D2232A;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:17px">Ayushman Bharat</div>
+    <div style="font-size:14px">Health cover. Check eligibility and how to apply.</div>
+    <div style="display:flex;gap:8px">
+      <button style="min-height:44px;flex:1;border:0;border-radius:14px;background:#12236B;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);font-size:16px;font-weight:800">Video guide</button>
+      <button style="min-height:44px;flex:1;border:0;border-radius:14px;background:#D2232A;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);animation:pulse 1.8s infinite;font-size:16px;font-weight:800">Audio</button>
+    </div>
+    <button style="min-height:44px;border:0;border-radius:14px;background:#F4F6FB;color:#12236B;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);font-size:16px;font-weight:800">Request volunteer help</button>
+  </div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #D2232A;border-bottom:6px solid #D2232A;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:17px">PM-Kisan</div>
+    <div style="font-size:14px">Farmer support. Steps explained by NSS volunteers.</div>
+    <div style="display:flex;gap:8px">
+      <button style="min-height:44px;flex:1;border:0;border-radius:14px;background:#12236B;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);font-size:16px;font-weight:800">Video guide</button>
+      <button style="min-height:44px;flex:1;border:0;border-radius:14px;background:#D2232A;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);animation:pulse 1.8s infinite;font-size:16px;font-weight:800">Audio</button>
+    </div>
+    <button style="min-height:44px;border:0;border-radius:14px;background:#F4F6FB;color:#12236B;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);font-size:16px;font-weight:800">Request volunteer help</button>
+  </div>
+</div>
+<div style="display:flex;background:#FFFFFF;border-top:3px solid #D2232A;box-shadow:0 -8px 20px rgba(18,35,107,.15);padding:8px 0">
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Home</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Requests</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Alliance</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Profile</button>
+</div>
+</div>
+</div>
+<figcaption style="color:#FFFFFF;font-weight:700;font-size:18px">Jan Kalyan</figcaption>
+</figure>
+
+<!-- Screen 4: Volunteer Dashboard -->
+<figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:16px">
+<div style="border-radius:44px;border:10px solid #0B1648;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45)">
+<div style="width:390px;height:844px;box-sizing:border-box;background:linear-gradient(180deg,#F4F6FB,#DCE3FA);color:#12236B;font-family:Arial,Helvetica,sans-serif;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:linear-gradient(135deg,#12236B,#3F5BD6);box-shadow:0 14px 26px rgba(18,35,107,.4);color:#FFFFFF;position:relative;overflow:hidden;padding:28px 20px 22px;border-radius:0 0 30px 30px;display:flex;flex-direction:column;gap:6px">
+  <div style="position:absolute;right:-30px;top:-40px;width:130px;height:130px;border-radius:65px;background:rgba(255,255,255,.14)"></div>
+  <div style="font-size:26px;font-weight:800">Volunteer Dashboard</div>
+  <div style="font-size:15px;color:#E3E8FF">Verified via MY Bharat portal ID</div>
+</div>
+<div style="padding:16px 20px;display:flex;flex-direction:column;gap:14px;flex:1;overflow-y:auto">
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #12236B;border-bottom:6px solid #12236B;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-size:14px">Your Seva Points</div>
+    <div style="font-size:34px;font-weight:800;color:#D2232A">[Points]</div>
+    <div style="font-size:13px">Synced to your NSS diary for credits and certificates</div>
+  </div>
+  <div style="font-size:17px;font-weight:800">Tasks near you</div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #D2232A;border-bottom:6px solid #D2232A;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:16px">Blood SOS</div>
+    <div style="font-size:14px">Matching blood group requested nearby</div>
+    <button style="min-height:44px;font-size:14px;border:0;border-radius:14px;background:#12236B;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);font-size:16px;font-weight:800">Accept task</button>
+  </div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #D2232A;border-bottom:6px solid #D2232A;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:16px">Vidya Seva</div>
+    <div style="font-size:14px">Student needs free tutoring</div>
+    <button style="min-height:44px;font-size:14px;border:0;border-radius:14px;background:#12236B;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);font-size:16px;font-weight:800">Accept task</button>
+  </div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #D2232A;border-bottom:6px solid #D2232A;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:16px">Swachh Bharat SOS</div>
+    <div style="font-size:14px">Garbage report awaiting cleanup</div>
+    <button style="min-height:44px;font-size:14px;border:0;border-radius:14px;background:#12236B;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);font-size:16px;font-weight:800">Accept task</button>
+  </div>
+</div>
+<div style="display:flex;background:#FFFFFF;border-top:3px solid #D2232A;box-shadow:0 -8px 20px rgba(18,35,107,.15);padding:8px 0">
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Home</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Requests</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Alliance</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Profile</button>
+</div>
+</div>
+</div>
+<figcaption style="color:#FFFFFF;font-weight:700;font-size:18px">Volunteer Dashboard</figcaption>
+</figure>
+
+<!-- Screen 5: Intra-NSS Alliance -->
+<figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:16px">
+<div style="border-radius:44px;border:10px solid #0B1648;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45)">
+<div style="width:390px;height:844px;box-sizing:border-box;background:linear-gradient(180deg,#F4F6FB,#DCE3FA);color:#12236B;font-family:Arial,Helvetica,sans-serif;display:flex;flex-direction:column;overflow:hidden">
+<div style="background:linear-gradient(135deg,#D2232A,#FF5A60);box-shadow:0 14px 26px rgba(18,35,107,.4);color:#FFFFFF;position:relative;overflow:hidden;padding:28px 20px 22px;border-radius:0 0 30px 30px;display:flex;flex-direction:column;gap:6px">
+  <div style="position:absolute;right:-30px;top:-40px;width:130px;height:130px;border-radius:65px;background:rgba(255,255,255,.14)"></div>
+  <div style="font-size:26px;font-weight:800">Intra-NSS Alliance</div>
+  <div style="font-size:15px;color:#E3E8FF">Recruit professional student volunteers</div>
+</div>
+<div style="padding:16px 20px;display:flex;flex-direction:column;gap:14px;flex:1;overflow-y:auto">
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #D2232A;border-bottom:6px solid #D2232A;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-size:13px">Your event</div>
+    <div style="font-weight:800;font-size:18px">Community Adoption Camp</div>
+  </div>
+  <div style="font-size:16px;font-weight:800">Professional Volunteer Requests</div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #12236B;border-bottom:6px solid #12236B;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:16px">Law students</div>
+    <div style="font-size:14px">Run a legal aid desk</div>
+  </div>
+  <div style="background:#FFFFFF;border-radius:18px;border-right:6px solid #12236B;border-bottom:6px solid #12236B;box-shadow:0 12px 22px rgba(18,35,107,.25);animation:rise .7s both;padding:14px;display:flex;flex-direction:column;gap:8px">
+    <div style="font-weight:800;font-size:16px">Medical students</div>
+    <div style="font-size:14px">Run a health diagnostic booth</div>
+  </div>
+  <button style="min-height:48px;border:0;border-radius:14px;background:#D2232A;color:#FFFFFF;box-shadow:0 6px 0 #0B1648,0 10px 12px rgba(11,22,72,.25);animation:pulse 1.8s infinite;font-size:16px;font-weight:800">Broadcast to nearby institutions</button>
+</div>
+<div style="display:flex;background:#FFFFFF;border-top:3px solid #D2232A;box-shadow:0 -8px 20px rgba(18,35,107,.15);padding:8px 0">
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Home</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Requests</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Alliance</button>
+  <button style="flex:1;border:0;background:#FFFFFF;min-height:44px;font-size:14px;font-weight:700;color:#12236B">Profile</button>
+</div>
+</div>
+</div>
+<figcaption style="color:#FFFFFF;font-weight:700;font-size:18px">Intra-NSS Alliance</figcaption>
+</figure>
+
+</div>
+</main>
+</body>
+</html>
